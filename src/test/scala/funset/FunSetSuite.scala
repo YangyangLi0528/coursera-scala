@@ -110,5 +110,43 @@ class FunSetSuite extends FunSuite {
     }
   }
 
+  test("intersect set"){
+    new TestSets{
+      val inter = intersect(s1,s2)
+      assert(!contains(inter,1),"Intersect 1")
+    }
+  }
+
+  test("diff set"){
+    new TestSets {
+      val diffs = diff(s1,s2)
+      assert(contains(diffs,1))
+      assert(!contains(diffs,2))
+    }
+  }
+
+  test("filter"){
+    new TestSets {
+
+      val filters = filter(s1,i => i==1)
+      assert(contains(filters,1))
+    }
+  }
+
+  test("forall"){
+    new TestSets {
+      val s = union(s1,s2)
+      val foralls = forall(s,i => i<3)
+      assert(foralls)
+    }
+  }
+
+  test("exists"){
+    new TestSets {
+      val s = union(s1,s2)
+      val exist = exists(s,i => i<2)
+      assert(exist)
+    }
+  }
 
 }
