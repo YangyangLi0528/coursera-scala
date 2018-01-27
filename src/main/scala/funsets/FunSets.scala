@@ -1,4 +1,4 @@
-package funset
+package funsets
 
 /**
  * 2. Purely Functional Sets.
@@ -79,7 +79,7 @@ object FunSets {
   /**
    * Returns a set transformed by applying `f` to each element of `s`.
    */
-    def map(s: Set, f: Int => Int): Set = ???
+    def map(s: Set, f: Int => Int): Set = (i:Int) => exists(s,f(_) == i)
 //    {
 //      def iter(a:Int):Boolean = {
 //        if(a < -1000)

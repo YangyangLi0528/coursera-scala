@@ -1,4 +1,4 @@
-package funset
+package funsets
 
 import org.scalatest.FunSuite
 
@@ -146,6 +146,10 @@ class FunSetSuite extends FunSuite {
       val s = union(s1,s2)
       val exist = exists(s,i => i<2)
       assert(exist)
+    }
+  }
+  test("map"){
+    new TestSets {
     }
   }
 
