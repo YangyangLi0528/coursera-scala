@@ -1,3 +1,5 @@
+import scala.runtime.Nothing$
+
 class Rationalss(x:Int,y:Int){
   /*
   auxiliary constructor
@@ -60,4 +62,9 @@ object Emptys extends IntSet{
 
   override def contains(x: Int): Boolean = false
 }
+Emptys contains(1)
+(new NonEmpty(7,Emptys,Emptys)) contains 7
 
+trait IntList
+class Cons(val head:Int,val tail:IntList)extends IntList
+class Nil extends IntList
