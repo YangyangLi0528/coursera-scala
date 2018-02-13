@@ -18,3 +18,4 @@ val movieSet = Set("lyy","yyl")
 
 var treasureMap = Map[Int,String]()
 treasureMap += (1 -> "lyy")
+
