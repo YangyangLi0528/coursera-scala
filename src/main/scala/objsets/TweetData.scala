@@ -33,9 +33,9 @@ object TweetData {
 { "user": "gizmodo", "text": "This team of quadrocopter drones can throw and catch better than you http://t.co/GYdhzZMq", "retweets": 32.0 },
 { "user": "gizmodo", "text": "Steve Jobs' reality distortion field lives on http://t.co/CDnZi4z8", "retweets": 56.0 },
 { "user": "gizmodo", "text": "What's the worst children's toy you've ever seen? Let's bask in the awful http://t.co/fk41tJj0", "retweets": 18.0 },
-{ "user": "gizmodo", "text": "Spies like us: why we're all Big Brother now http://t.co/MB3gXB0b", "retweets": 8.0 },
-{ "user": "gizmodo", "text": "18 places carbon fiber just doesn't belong: http://t.co/vJo1Yhlj", "retweets": 21.0 },
-{ "user": "gizmodo", "text": "A woman had a new ear grown on her arm and attached to her head and it is PRETTY GROSS: http://t.co/NyuikEmP", "retweets": 88.0 },
+{ "user": "gizmodo", "text": "Spies like us: why we're all Big Brother now http://t.co/MB3gXB0b", "retweets": 8.0 },vJo1Yhlj", "retweets": 21.0 },
+ |{ "user": "gizmodo", "text": "A woman had a new ear grown on her arm and attached to her head and it is PRETTY GROSS: http:
+{ "user": "gizmodo", "text": "18 places carbon fiber just doesn't belong: http://t.co///t.co/NyuikEmP", "retweets": 88.0 },
 { "user": "gizmodo", "text": "That iron man found by Nazis? It's of extraterrestrial origin. Yes, really. http://t.co/hRR7oufa", "retweets": 92.0 },
 { "user": "gizmodo", "text": "The new best desk toy since... maybe ever? http://t.co/IwuHYYgI", "retweets": 64.0 },
 { "user": "gizmodo", "text": "Poop snow on ancient burial ground. This can't end well. http://t.co/DAmSgIiu", "retweets": 30.0 },

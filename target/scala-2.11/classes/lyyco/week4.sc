@@ -12,5 +12,10 @@ val pair = (99,"lyytest")
 println(pair._1)
 println(pair._2)
 var jetSet = Set("Boeing","Airbus")
-jetSet += "Lear"
+var sett = jetSet += "Lear"
 println(jetSet.contains("Lear"))
+val movieSet = Set("lyy","yyl")
+
+var treasureMap = Map[Int,String]()
+treasureMap += (1 -> "lyy")
+
