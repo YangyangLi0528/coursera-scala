@@ -1,4 +1,5 @@
-abstract class Boolean{
+import scala.collection.mutable.Map
+ abstract class Boolean{
   def ifThenElse[T](t: => T, e: => T): T
   //def && (x: => Boolean): Boolean = ifThenElse(x,false)
 
@@ -19,3 +20,31 @@ val movieSet = Set("lyy","yyl")
 var treasureMap = Map[Int,String]()
 treasureMap += (1 -> "lyy")
 
+ class ChecksumAccumulator{
+   private  var sum = 0
+   def add(b:Byte)
+     {sum += b}
+
+   def checksum():Int =
+      ~(sum & 0xFF) +1
+
+ }
+ val acc = new ChecksumAccumulator
+def g() {"this String gets lost too"}
+ def h() = {"this String gets returned"}
+
+ object ChecksumAccumulator {
+   private val cache = Map[String,Int]()
+   def calculate(s:String):Int =
+     if(cache.contains(s))
+       cache(s)
+   else{
+       val acc = new ChecksumAccumulator
+       for(c <- s)
+         acc.add(c.toByte)
+        val cs = acc.checksum()
+       cache += (s -> cs)
+       cs
+     }
+ }
+ChecksumAccumulator.calculate("hello world")
