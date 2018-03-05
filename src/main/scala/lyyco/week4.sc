@@ -48,3 +48,11 @@ def g() {"this String gets lost too"}
      }
  }
 ChecksumAccumulator.calculate("hello world")
+(x:Int)=> x *x
+class AnonFun extends Function1[Int,Int]{
+  def apply(x:Int)=x * x
+}
+new AnonFun
+
+for(i <- 1 to 10 )System.out.println(i)
+def assertAllPos[S <: Int](r:S):S
